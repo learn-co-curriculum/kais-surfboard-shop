@@ -10,10 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170302160907) do
+ActiveRecord::Schema.define(version: 20170302161600) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "surfboard_categories", force: :cascade do |t|
+    t.integer  "surfboard_id"
+    t.integer  "category_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["category_id"], name: "index_surfboard_categories_on_category_id", using: :btree
+    t.index ["surfboard_id"], name: "index_surfboard_categories_on_surfboard_id", using: :btree
+  end
 
   create_table "surfboards", force: :cascade do |t|
     t.string   "name"
@@ -24,4 +39,6 @@ ActiveRecord::Schema.define(version: 20170302160907) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "surfboard_categories", "categories"
+  add_foreign_key "surfboard_categories", "surfboards"
 end
