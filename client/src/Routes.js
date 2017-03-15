@@ -3,6 +3,7 @@ import { Route, IndexRoute } from 'react-router'
 import App from './components/App'
 import Surfboards from './components/Surfboards'
 import AddSurfboard from './components/AddSurfboard'
+// import SurfboardDetail from './components/SurfboardDetail'
 import About from './components/About'
 import Home from './components/Home'
 
@@ -11,6 +12,7 @@ export default (
         <IndexRoute component={Home} />
         <Route path="/surfboards" component={Surfboards}>
             <Route path="/surfboards/new" component={AddSurfboard} />
+            {/*<Route path="/surfboards/:id" component={SurfboardDetail} />*/}
         </Route>
         <Route path="/about" component={About} />
     </Route>

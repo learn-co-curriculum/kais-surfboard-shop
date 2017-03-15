@@ -5,14 +5,15 @@ div#main-container {
 }
 
 div#surfboards-container {
+  z-index: -2;
   width: 30vw;
-  border-right: 2px solid midnightblue;
+  border-right: 4px solid midnightblue;
   height: 95vh;
   overflow: scroll;
-  margin: 0;
-  padding-top: 32px;
+  margin-top: 22px;
   float: left;
   box-sizing: border-box;
+  background-color: orangered;
 }
 
 div#surfboard-main-container {
@@ -26,3 +27,21 @@ div#surfboard-main-container {
   line-height: 90px;
   box-sizing: border-box; 
 }
+
+h3.board-link {
+  width: 100%;
+  margin: 0;
+  height: 22px;
+  padding: 6px;
+  border-bottom: 2px solid ghostwhite;
+  background: orangered;
+  color: ghostwhite;
+  cursor: pointer;
+}
+
+h3.board-link:hover {
+  background: ghostwhite;
+  color: orangered;
+  border-bottom: 2px solid orangered;
+}
+

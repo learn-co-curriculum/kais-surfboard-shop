@@ -1,6 +1,7 @@
 .navbar {
     background: midnightblue;
     padding: 12px;
+    z-index: 9999;
 }
 .navbar a {
     margin: 10px;
