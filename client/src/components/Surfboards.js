@@ -1,6 +1,8 @@
 import React, { Component } from 'react' 
 import { Link } from 'react-router'
 
+import './Surfboards.css'
+
 export default class Surfboards extends Component {
 
     constructor(props) {
@@ -45,12 +47,15 @@ export default class Surfboards extends Component {
         ))
 
         return (
-            <div>
-                <h1>Surfboard Inventory</h1>
-                <Link to="/surfboards/new">Add A Surfboard</Link>
-                
-                {childrenWithProps || surfboards}
-
+            <div id="main-container">
+                <div id="surfboards-container">
+                    {surfboards}
+                </div>
+                <div id="surfboard-main-container">
+                    <h1>Surfboard Inventory</h1>
+                    <Link to="/surfboards/new">Add A Surfboard</Link>
+                    {childrenWithProps}
+                </div>
             </div>
         )
     }

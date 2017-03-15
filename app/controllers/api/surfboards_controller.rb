@@ -5,7 +5,6 @@ class Api::SurfboardsController < ApplicationController
     end
 
     def show 
-        binding.pry
         render json: Surfboard.find_by(id: params[:id]).to_json(include: [ :categories ])
     end
 
