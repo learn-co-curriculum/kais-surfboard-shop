@@ -12,5 +12,14 @@ module.exports = {
     browser.assert.urlContains('surfboards');
   }, 
 
+  'get to about page': (browser) => {
+    browser 
+      .url(browser.launchUrl)
+      .waitForElementVisible('.navbar', 1000)
+      .click('a[href="/about')
+
+    browser.assert.urlContains('about');
+  },
+
   'close': (browser) => browser.end()
 }

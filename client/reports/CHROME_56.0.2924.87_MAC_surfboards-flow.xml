@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="2">
+            tests="3">
 
   <testsuite name="surfboards-flow"
     errors="0" failures="0" hostname="" id="" package="surfboards-flow" skipped="0"
-    tests="2" time="1.406" timestamp="Mon, 27 Mar 2017 12:27:15 GMT">
+    tests="3" time="1.744" timestamp="Tue, 28 Mar 2017 20:33:25 GMT">
   
-    <testcase name="get to surfboards page" classname="surfboards-flow" time="1.328" assertions="2">
+    <testcase name="get to surfboards page" classname="surfboards-flow" time="1.320" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="close" classname="surfboards-flow" time="0.07800" assertions="0">
+    <testcase name="get to about page" classname="surfboards-flow" time="0.3470" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="close" classname="surfboards-flow" time="0.07700" assertions="0">
     </testcase>
   
   
