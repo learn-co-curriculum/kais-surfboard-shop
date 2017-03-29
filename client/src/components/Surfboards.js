@@ -59,7 +59,7 @@ export default class Surfboards extends Component {
         ))
 
         return (
-            <div id="main-container">
+            <div id="main-container" className="surfboards">
                 <div id="surfboards-container">
                     {/*<Link to="/surfboards/new">Add A Surfboard</Link>*/}
                     {surfboards}
