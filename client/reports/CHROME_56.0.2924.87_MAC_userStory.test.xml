@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="3">
+
+  <testsuite name="userStory.test"
+    errors="0" failures="0" hostname="" id="" package="userStory.test" skipped="0"
+    tests="3" time="1.806" timestamp="Wed, 29 Mar 2017 19:33:21 GMT">
+  
+    <testcase name="user goes to Kai's surfboard shop" classname="userStory.test" time="1.245" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="user goes to the surfboards page" classname="userStory.test" time="0.4800" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="close" classname="userStory.test" time="0.08100" assertions="0">
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>
